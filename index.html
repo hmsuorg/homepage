@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARD MUSIC AND SOUNDS UNITED</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="favicon-180x180.png">
+    <link rel="icon" href="favicon-270x270.png" sizes="270x270">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            animation: hue-rotate 20s linear infinite;
+        }
+
+        .background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+        }
+
+        @keyframes hue-rotate {
+            from {
+                filter: hue-rotate(0deg);
+            }
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .content {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            text-shadow: 0px 5px 2px rgba(0,0,0,0.3),
+                        10px 7px 5px rgba(0,0,0,0.15),
+                        -10px 7px 5px rgba(0,0,0,0.15);
+        }
+
+        p {
+            text-transform: lowercase;
+            opacity: 0.9;
+        }
+
+        .links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .links a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <img src="cover.jpg" alt="Cover">
+    </div>
+    <div class="content">
+        <h1>Hard Music and Sounds United</h1>
+        <p>an open drum and bass movement</p>
+        <div class="links">
+            <a href="https://www.facebook.com/hmsu.org" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hmsuorg" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@hmsuorg" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/c/hmsuorg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://t.me/hmsuradio" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://soundcloud.com/hmsuorg" target="_blank"><i class="fab fa-soundcloud"></i></a>
+            <a href="https://www.mixcloud.com/hmsu/" target="_blank"><i class="fab fa-mixcloud"></i></a>
+            <a href="https://github.com/hmsuorg" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</body>
+</html>
